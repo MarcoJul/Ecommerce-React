@@ -1,0 +1,13 @@
+.box {
+  width: 37.5rem;
+  height: 81.2rem;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 0 70 0 #c7cbe3;
+}
+
+.title {
+  font-family: "poppins", sans-serif;
+  font-size: 3.2rem;
+  margin: 5rem 0 0 3.8rem;
+}
