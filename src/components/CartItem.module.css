@@ -1,0 +1,66 @@
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  font-family: "poppins", sans-serif;
+  padding: 0 2.5rem 2.5rem 2rem;
+  position: relative;
+}
+
+.cartItem::after {
+  content: "";
+  width: 90%;
+  background-color: #d7d7f9;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.cartItem img {
+  height: 6.5rem;
+  width: 6.5rem;
+}
+
+.cartItem h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.unitPrice,
+.quantity {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.cartItem .action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.action button {
+  background-color: #6b00f5;
+  border: none;
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: inherits;
+}
+
+.action button:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.totalPrice {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
