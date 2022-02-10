@@ -1,13 +1,16 @@
 import classes from "./MenuItem.module.css";
 
 const MenuItem = (props) => {
-  console.log(props.menuItems[0].img);
   return (
-    <li className={classes.item}>
-      <img src={props.menuItems[0].img} />
-      <h2>{props.menuItems[0].name}</h2>
-      <p>{props.menuItems[0].price}</p>
-      <button>Add to Cart</button>
+    <li className={classes.item} style={{ backgroundColor: props.bgColor }}>
+      <div>
+        <img src={props.img} />
+      </div>
+      <div>
+        <h2>{props.name}</h2>
+        <p>${props.price}</p>
+        <button>Add to Cart</button>
+      </div>
     </li>
   );
 };
