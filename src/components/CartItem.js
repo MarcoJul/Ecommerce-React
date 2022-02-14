@@ -6,7 +6,7 @@ import { ReactComponent as Chevron } from "../assets/images/chevron.svg";
 const CartItem = (props) => {
   return (
     <li className={classes.cartItem}>
-      <img src={menuItems[0].img} />
+      <img src={menuItems[0].img} alt="plate" />
       <div>
         <h2>French Fries with Ketchup</h2>
         <p className={classes.unitPrice}>$3.50</p>

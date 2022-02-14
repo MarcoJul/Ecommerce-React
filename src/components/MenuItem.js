@@ -4,7 +4,7 @@ const MenuItem = (props) => {
   return (
     <li className={classes.item} style={{ backgroundColor: props.bgColor }}>
       <div>
-        <img src={props.img} />
+        <img src={props.img} alt={props.name} />
       </div>
       <div>
         <h2>{props.name}</h2>
