@@ -1,11 +1,17 @@
 import { Fragment } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { cartAction } from "../store";
 import classes from "./CartTotal.module.css";
 
 const CartTotal = () => {
+  const dispatch = useDispatch();
   const subTotal = useSelector((state) => state.subTotal);
   const taxes = useSelector((state) => state.taxes);
   const totalCart = useSelector((state) => state.totalCart);
+
+  const incrementTotal = () => {
+    dispatch(cartAction.increment());
+  };
 
   return (
     <Fragment>
@@ -21,6 +27,7 @@ const CartTotal = () => {
         <div className={classes.row}>
           <h3>Total:</h3>
           <p className={classes.total}>${totalCart}</p>
+          <button onClick={incrementTotal}>Increment</button>
         </div>
       </div>
     </Fragment>
