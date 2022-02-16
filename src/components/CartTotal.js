@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { cartAction } from "../store";
+import { cartAction } from "../store/cart";
 import classes from "./CartTotal.module.css";
 
 const CartTotal = () => {
