@@ -4,17 +4,18 @@ import classes from "./CartItem.module.css";
 import { ReactComponent as Chevron } from "../assets/images/chevron.svg";
 
 const CartItem = (props) => {
+  console.log("prop", props);
   return (
     <li className={classes.cartItem}>
-      <img src={menuItems[0].img} alt="plate" />
+      <img src={props.item.img} alt="plate" />
       <div>
-        <h2>French Fries with Ketchup</h2>
-        <p className={classes.unitPrice}>$3.50</p>
+        <h2>{props.item.title}</h2>
+        <p className={classes.unitPrice}>${props.item.price}</p>
         <div className={classes.action}>
           <button>
             <Chevron />
           </button>
-          <p className={classes.quantity}>2</p>
+          <p className={classes.quantity}>{props.item.quantity}</p>
           <button>
             <Chevron />
           </button>
