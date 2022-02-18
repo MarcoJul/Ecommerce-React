@@ -15,14 +15,13 @@ const cartSlice = createSlice({
           title: newItem.title,
           img: newItem.img,
           price: newItem.price,
-          totalPrice: newItem.totalPrice,
+          totalPrice: newItem.price,
         });
-        state.totalAmount += newItem.price;
       } else {
         existingItem.quantity++;
         existingItem.totalPrice += newItem.price;
-        state.totalAmount += +newItem.price;
       }
+      state.totalAmount += newItem.price;
     },
     removeItemToCart(state, action) {
       const id = action.payload;

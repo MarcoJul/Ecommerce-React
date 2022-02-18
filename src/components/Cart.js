@@ -26,7 +26,7 @@ const Cart = () => {
           />
         ))
       )}
-      <CartTotal />
+      {cartItems.length !== 0 && <CartTotal />}
     </div>
   );
 };

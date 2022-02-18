@@ -9,12 +9,11 @@ const Menu = (props) => {
       <ul>
         {props.items.map((item) => (
           <MenuItem
-            menuItems={props.items}
             id={item.id}
             img={item.img}
             key={item.id}
             bgColor={item.bgColor}
-            name={item.name}
+            title={item.title}
             price={item.price}
           />
         ))}

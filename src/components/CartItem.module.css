@@ -5,6 +5,7 @@
   font-family: "poppins", sans-serif;
   padding: 0 2.5rem 2.5rem 2rem;
   position: relative;
+  margin-bottom: 3rem;
 }
 
 .cartItem::after {
@@ -16,6 +17,10 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
+}
+
+.infoBox {
+  width: 70%;
 }
 
 .cartItem img {

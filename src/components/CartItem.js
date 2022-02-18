@@ -1,4 +1,3 @@
-import { menuItems } from "../costants/menuItems";
 import classes from "./CartItem.module.css";
 
 import { ReactComponent as Chevron } from "../assets/images/chevron.svg";
@@ -8,18 +7,20 @@ const CartItem = (props) => {
   return (
     <li className={classes.cartItem}>
       <img src={props.item.img} alt="plate" />
-      <div>
+      <div className={classes.infoBox}>
         <h2>{props.item.title}</h2>
         <p className={classes.unitPrice}>${props.item.price}</p>
         <div className={classes.action}>
           <button>
             <Chevron />
           </button>
-          <p className={classes.quantity}>{props.item.quantity}</p>
+          <p className={classes.quantity}>2</p>
           <button>
             <Chevron />
           </button>
-          <p className={classes.totalPrice}>{props.item.totalPrice}</p>
+          <p className={classes.totalPrice}>
+            {props.item.totalPrice.toFixed(2)}
+          </p>
         </div>
       </div>
     </li>

@@ -2,27 +2,27 @@ import { useDispatch } from "react-redux";
 import { cartAction } from "../store/cart";
 import classes from "./MenuItem.module.css";
 
-const MenuItem = (props) => {
+const MenuItem = ({ id, title, img, price, bgColor }) => {
   const dispatch = useDispatch();
 
   const addToCartHandler = () => {
     dispatch(
       cartAction.addItemToCart({
-        id: props.id,
-        title: props.name,
-        img: props.img,
-        price: props.price,
+        id,
+        title,
+        img,
+        price,
       })
     );
   };
   return (
-    <li className={classes.item} style={{ backgroundColor: props.bgColor }}>
+    <li className={classes.item} style={{ backgroundColor: bgColor }}>
       <div>
-        <img src={props.img} alt={props.name} />
+        <img src={img} alt={title} />
       </div>
       <div className={classes.info}>
-        <h2>{props.name}</h2>
-        <p>${props.price}</p>
+        <h2>{title}</h2>
+        <p>${price}</p>
         <button onClick={addToCartHandler}>Add to Cart</button>
       </div>
     </li>
