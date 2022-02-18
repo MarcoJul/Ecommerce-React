@@ -7,6 +7,7 @@ const CartTotal = () => {
   console.log(subTotal);
 
   const totalTaxes = +(subTotal * 0.04).toFixed(2);
+  const cartTotal = subTotal + totalTaxes;
 
   return (
     <Fragment>
@@ -21,7 +22,7 @@ const CartTotal = () => {
         </div>
         <div className={classes.row}>
           <h3>Total:</h3>
-          <p className={classes.total}>${+subTotal + +totalTaxes}</p>
+          <p className={classes.total}>${cartTotal.toFixed(2)}</p>
         </div>
       </div>
     </Fragment>
