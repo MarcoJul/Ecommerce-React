@@ -70,7 +70,7 @@ export const menuItems = [
     bgColor: "rgba(135,135,241,0.2)",
     img: TortelliniPhoto,
     title: "Tortellini",
-    price: "3.50",
+    price: 3.5,
     currency: "$",
   },
   {

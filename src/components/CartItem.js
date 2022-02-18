@@ -1,26 +1,44 @@
+import { useDispatch } from "react-redux";
+import { cartAction } from "../store/cart";
 import classes from "./CartItem.module.css";
 
 import { ReactComponent as Chevron } from "../assets/images/chevron.svg";
 
-const CartItem = (props) => {
-  console.log("prop", props);
+const CartItem = ({ id, title, img, price, totalPrice, quantity }) => {
+  const dispatch = useDispatch();
+
+  const addToCartHandler = () => {
+    dispatch(
+      cartAction.addItemToCart({
+        id,
+        title,
+        img,
+        price,
+        quantity,
+      })
+    );
+  };
+
+  const removeFromCartHandler = () => {
+    dispatch(cartAction.removeItemToCart(id));
+  };
+
+  console.log(quantity);
   return (
     <li className={classes.cartItem}>
-      <img src={props.item.img} alt="plate" />
+      <img src={img} alt="plate" />
       <div className={classes.infoBox}>
-        <h2>{props.item.title}</h2>
-        <p className={classes.unitPrice}>${props.item.price}</p>
+        <h2>{title}</h2>
+        <p className={classes.unitPrice}>${price}</p>
         <div className={classes.action}>
-          <button>
+          <button onClick={removeFromCartHandler}>
             <Chevron />
           </button>
-          <p className={classes.quantity}>2</p>
-          <button>
+          <p className={classes.quantity}>{quantity}</p>
+          <button onClick={addToCartHandler}>
             <Chevron />
           </button>
-          <p className={classes.totalPrice}>
-            {props.item.totalPrice.toFixed(2)}
-          </p>
+          <p className={classes.totalPrice}>{totalPrice.toFixed(2)}</p>
         </div>
       </div>
     </li>

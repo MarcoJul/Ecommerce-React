@@ -12,6 +12,7 @@ const MenuItem = ({ id, title, img, price, bgColor }) => {
         title,
         img,
         price,
+        quantity: 1,
       })
     );
   };
@@ -22,7 +23,7 @@ const MenuItem = ({ id, title, img, price, bgColor }) => {
       </div>
       <div className={classes.info}>
         <h2>{title}</h2>
-        <p>${price}</p>
+        <p>${price.toFixed(2)}</p>
         <button onClick={addToCartHandler}>Add to Cart</button>
       </div>
     </li>
