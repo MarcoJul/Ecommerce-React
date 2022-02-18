@@ -1,17 +1,11 @@
 import { Fragment } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { cartAction } from "../store/cart";
+import { useSelector } from "react-redux";
 import classes from "./CartTotal.module.css";
 
 const CartTotal = () => {
-  const dispatch = useDispatch();
-  const subTotal = useSelector((state) => state.subTotal);
-  const taxes = useSelector((state) => state.taxes);
-  const totalCart = useSelector((state) => state.totalCart);
+  const subTotal = useSelector((state) => state.cart.totalAmount);
 
-  const incrementTotal = () => {
-    dispatch(cartAction.increment());
-  };
+  const totalTaxes = +(subTotal * 0.04).toFixed(2);
 
   return (
     <Fragment>
@@ -22,12 +16,11 @@ const CartTotal = () => {
         </div>
         <div className={classes.row}>
           <h3>Tax:</h3>
-          <p className={classes.taxes}>${taxes}</p>
+          <p className={classes.taxes}>${+totalTaxes}</p>
         </div>
         <div className={classes.row}>
           <h3>Total:</h3>
-          <p className={classes.total}>${totalCart}</p>
-          <button onClick={incrementTotal}>Increment</button>
+          <p className={classes.total}>${+subTotal + +totalTaxes}</p>
         </div>
       </div>
     </Fragment>

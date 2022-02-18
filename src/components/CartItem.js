@@ -19,7 +19,7 @@ const CartItem = (props) => {
           <button>
             <Chevron />
           </button>
-          <p className={classes.totalPrice}>$15.64</p>
+          <p className={classes.totalPrice}>{props.item.totalPrice}</p>
         </div>
       </div>
     </li>

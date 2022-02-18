@@ -27,6 +27,13 @@
   font-weight: 700;
   margin-top: 1.5rem;
 }
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 105%;
+}
 
 .item button {
   font-family: inherit;

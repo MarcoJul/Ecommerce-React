@@ -20,7 +20,7 @@ const MenuItem = (props) => {
       <div>
         <img src={props.img} alt={props.name} />
       </div>
-      <div>
+      <div className={classes.info}>
         <h2>{props.name}</h2>
         <p>${props.price}</p>
         <button onClick={addToCartHandler}>Add to Cart</button>
