@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Ecommerce-React/static/css/main.c3aa5f1a.css",
+    "main.js": "/Ecommerce-React/static/js/main.26f99337.js",
+    "static/js/787.c875205c.chunk.js": "/Ecommerce-React/static/js/787.c875205c.chunk.js",
+    "static/media/plate__chicken-salad.png": "/Ecommerce-React/static/media/plate__chicken-salad.79e3dd16e66cd1b26a05.png",
+    "static/media/plate__salmon-vegetables.png": "/Ecommerce-React/static/media/plate__salmon-vegetables.ae879edfef92f9068c8b.png",
+    "static/media/plate__spaghetti-meat-sauce.png": "/Ecommerce-React/static/media/plate__spaghetti-meat-sauce.754660cf866bd713a048.png",
+    "static/media/plate__bacon-eggs.png": "/Ecommerce-React/static/media/plate__bacon-eggs.b616c1f1f5de8a31a94f.png",
+    "static/media/plate__french-fries.png": "/Ecommerce-React/static/media/plate__french-fries.796cf98eeaaae51c02ab.png",
+    "static/media/plate__fish-sticks-fries.png": "/Ecommerce-React/static/media/plate__fish-sticks-fries.1007fbc8626870c43ed8.png",
+    "static/media/plate__tortellini.png": "/Ecommerce-React/static/media/plate__tortellini.fab665ef9efe46e8e9b6.png",
+    "static/media/plate__ravioli.png": "/Ecommerce-React/static/media/plate__ravioli.b59b03fe60ba411bd4c9.png",
+    "index.html": "/Ecommerce-React/index.html",
+    "main.c3aa5f1a.css.map": "/Ecommerce-React/static/css/main.c3aa5f1a.css.map",
+    "main.26f99337.js.map": "/Ecommerce-React/static/js/main.26f99337.js.map",
+    "787.c875205c.chunk.js.map": "/Ecommerce-React/static/js/787.c875205c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3aa5f1a.css",
+    "static/js/main.26f99337.js"
+  ]
+}
