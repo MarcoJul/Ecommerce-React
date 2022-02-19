@@ -4,12 +4,24 @@
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 0 0 70 0 #c7cbe3;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  position: relative;
 }
 
 .title {
   font-family: "poppins", sans-serif;
   font-size: 3.2rem;
-  margin: 5rem 0 5rem 3.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15rem;
+  padding: 5rem 0 5rem 3.8rem;
+}
+
+.menuBox {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 66.2rem;
+  margin-top: 15rem;
+  border-radius: 25px;
+  padding-top: 2rem;
 }

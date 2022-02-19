@@ -4,7 +4,6 @@ import classes from "./CartTotal.module.css";
 
 const CartTotal = () => {
   const subTotal = useSelector((state) => state.cart.totalAmount);
-  console.log(subTotal);
 
   const totalTaxes = +(subTotal * 0.04).toFixed(2);
   const cartTotal = subTotal + totalTaxes;

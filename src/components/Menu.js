@@ -6,7 +6,7 @@ const Menu = (props) => {
   return (
     <div className={classes.box}>
       <h2 className={classes.title}>To Go Menu</h2>
-      <ul>
+      <ul className={classes.menuBox}>
         {props.items.map((item) => (
           <MenuItem
             id={item.id}

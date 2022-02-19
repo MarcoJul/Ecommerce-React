@@ -23,22 +23,47 @@ const CartItem = ({ id, title, img, price, totalPrice, quantity }) => {
     dispatch(cartAction.removeItemToCart(id));
   };
 
-  console.log(quantity);
   return (
     <li className={classes.cartItem}>
       <img src={img} alt="plate" />
       <div className={classes.infoBox}>
         <h2>{title}</h2>
-        <p className={classes.unitPrice}>${price}</p>
+        <p className={classes.unitPrice}>${price.toFixed(2)}</p>
         <div className={classes.action}>
           <button onClick={removeFromCartHandler}>
-            <Chevron />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#fff"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M18 12H6"
+              />
+            </svg>
           </button>
           <p className={classes.quantity}>{quantity}</p>
           <button onClick={addToCartHandler}>
-            <Chevron />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#fff"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
           </button>
-          <p className={classes.totalPrice}>{totalPrice.toFixed(2)}</p>
+          <p className={classes.totalPrice}>${totalPrice.toFixed(2)}</p>
         </div>
       </div>
     </li>

@@ -82,3 +82,8 @@ export const menuItems = [
     currency: "$",
   },
 ];
+
+// fetch(
+//   "******",
+//   { method: "PUT", body: JSON.stringify(menuItems) }
+// );
