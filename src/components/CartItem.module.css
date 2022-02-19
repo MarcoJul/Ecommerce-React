@@ -31,6 +31,7 @@
 .cartItem h2 {
   font-size: 1.8rem;
   font-weight: 400;
+  height: 5.2rem;
 }
 
 .unitPrice,
@@ -38,14 +39,21 @@
   font-size: 1.6rem;
   font-weight: 700;
 }
-
-.cartItem .action {
+.containerActions {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  gap: 2rem;
   margin-top: 1rem;
+  gap: 2rem;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-width: 10rem;
+  flex-grow: 1;
 }
 
 .action button {
@@ -58,14 +66,12 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-family: inherits;
-}
-
-.action button:nth-child(3) {
-  transform: rotate(180deg);
+  font-family: inherit;
 }
 
 .totalPrice {
   font-size: 3.2rem;
   font-weight: 700;
+  width: 12rem;
+  text-align: right;
 }

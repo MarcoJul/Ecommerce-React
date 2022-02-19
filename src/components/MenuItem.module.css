@@ -20,6 +20,7 @@
   font-weight: 400;
   line-height: 2rem;
   margin-top: 2.5rem;
+  height: 4rem;
 }
 
 .item p {
@@ -27,6 +28,7 @@
   font-weight: 700;
   margin-top: 1.5rem;
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -35,7 +37,7 @@
   height: 105%;
 }
 
-.item button {
+.addToCart {
   font-family: inherit;
   font-weight: bold;
   background-color: #6b00f5;
@@ -43,10 +45,49 @@
   border: none;
   padding: 0.5rem 2rem;
   border-radius: 100px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  width: 13rem;
+  height: 3.2rem;
 }
 
-.item button:hover {
+.addToCart:hover {
   background-color: #5100bb;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-width: 10rem;
+  flex-grow: 1;
+  height: 3.2rem;
+
+  background-color: #6b00f5;
+  width: 13rem;
+  border-radius: 1000px;
+}
+
+p.quantity {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+}
+
+.action button {
+  background-color: #6b00f5;
+  border: none;
+  height: 3.2rem;
+  width: 5rem;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.action svg {
+  width: 3.2rem;
+  height: 3.2rem;
 }

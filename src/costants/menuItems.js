@@ -22,6 +22,7 @@ export const menuItems = [
     title: "French Fries with Ketchup",
     price: 3.5,
     currency: "$",
+    quantity: 1,
   },
   {
     id: "a2",
@@ -30,6 +31,7 @@ export const menuItems = [
     title: "Salmon and Vegetables",
     price: 4.5,
     currency: "$",
+    quantity: 1,
   },
   {
     id: "a3",
@@ -39,6 +41,7 @@ export const menuItems = [
     title: "Chicken Salad",
     price: 6.0,
     currency: "$",
+    quantity: 1,
   },
   {
     id: "a4",
@@ -48,6 +51,7 @@ export const menuItems = [
     title: "Fish sticks with fries",
     price: 5.8,
     currency: "$",
+    quantity: 1,
   },
   {
     id: "a5",
@@ -56,6 +60,7 @@ export const menuItems = [
     title: "Ravioli",
     price: 5,
     currency: "$",
+    quantity: 1,
   },
   {
     id: "a6",
@@ -64,6 +69,7 @@ export const menuItems = [
     title: "Spaghetti with meat sauce",
     price: 4.5,
     currency: "$",
+    quantity: 1,
   },
   {
     id: "a7",
@@ -72,6 +78,7 @@ export const menuItems = [
     title: "Tortellini",
     price: 3.5,
     currency: "$",
+    quantity: 1,
   },
   {
     id: "a8",
@@ -80,6 +87,7 @@ export const menuItems = [
     title: "Bacon with eggs",
     price: 5.5,
     currency: "$",
+    quantity: 1,
   },
 ];
 

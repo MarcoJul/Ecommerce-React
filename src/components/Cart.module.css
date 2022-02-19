@@ -16,10 +16,10 @@
 .title {
   font-family: "poppins", sans-serif;
   font-size: 3.2rem;
-  margin: 5rem 0 5rem 3.8rem;
+  margin: 3rem 0 2.5rem 3.8rem;
 }
 
 .itemBox {
-  max-height: 55%;
+  max-height: 65%;
   overflow-y: scroll;
 }
