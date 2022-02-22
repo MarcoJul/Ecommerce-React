@@ -18,6 +18,9 @@
 
 .cartIcon {
   width: 5rem;
+  padding: 0.4rem 0.5rem 0.6rem;
+  border-radius: 50%;
+  border: 2px solid #6b00f5;
 }
 
 .title {
@@ -32,15 +35,14 @@
 .cartNumber {
   font-size: 1.2rem;
   font-family: "poppins", sans-serif;
-  border: 3px solid black;
   width: 2.5rem;
   height: 2.5rem;
   font-weight: 700;
   position: absolute;
   bottom: -5%;
   right: 0;
-  background-color: #fff;
-
+  background-color: #6b00f5;
+  color: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;

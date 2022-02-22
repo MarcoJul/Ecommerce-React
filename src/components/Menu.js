@@ -34,7 +34,7 @@ const Menu = (props) => {
             className={classes.cartIcon}
             fill="none"
             viewBox="0 0 24 24"
-            stroke="currentColor"
+            stroke="#6b00f5"
           >
             <path
               strokeLinecap="round"
