@@ -28,27 +28,23 @@ const Menu = (props) => {
     <div className={classes.box}>
       <div className={classes.header}>
         <h2 className={classes.title}>To Go Menu</h2>
-        <div className={classes.flexCart}>
+        <div className={`${classes.flexCart}  ${isAdded ? classes.bump : ""}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className={classes.cartIcon}
             fill="none"
             viewBox="0 0 24 24"
-            stroke="#6b00f5"
+            stroke="#fff"
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={1.5}
+              strokeWidth={1}
               d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
             />
           </svg>
           {totalQuantity !== 0 && (
-            <p
-              className={`${classes.cartNumber} ${isAdded ? classes.bump : ""}`}
-            >
-              {totalQuantity}
-            </p>
+            <p className={classes.cartNumber}>{totalQuantity}</p>
           )}
         </div>
       </div>
